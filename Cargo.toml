@@ -1,3 +1,10 @@
+[package]
+authors = ["{{authors}}"]
+edition = "2018"
+readme = "README.md"
+name = "{{project-name}}"
+version = "0.1.0"
+
 [profile.dev]
 panic = "abort"
 lto = true
@@ -9,6 +16,8 @@ codegen-units = 1
 debug = true
 lto = true
 opt-level = "s"
+
+
 
 [workspace]
 members = [
